@@ -24,6 +24,8 @@ public class BadSubscriptCaught {
 				
 		Scanner inputDevice= new Scanner(System.in);
 		
+		//While loop doesn't work with try-catch- ?
+		
 		//while (ans=="y"){
 		
 			try
@@ -31,6 +33,7 @@ public class BadSubscriptCaught {
 			System.out.println("Hello, please type an integer:");
 			
 			answer =inputDevice.nextInt();
+			inputDevice.nextLine();
 			
 			System.out.println(list.get(answer)+" "); 
 			}
@@ -38,10 +41,14 @@ public class BadSubscriptCaught {
 			{
 				System.out.println("Error: number should be less than 8.");
 			}
-			// System.out.println("Try agagin?");
+			
+			// System.out.println("Try again?");
 			// ans=inputDevice.nextLine();
 			// inputDevice.nextLine();
-		}
+			// //inputDevice.nextLine();
+			// System.out.println("ans is equal to " + ans);
+			
+		//}
 	}
 	
 	
