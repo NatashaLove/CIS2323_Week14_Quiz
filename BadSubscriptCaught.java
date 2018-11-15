@@ -7,6 +7,7 @@ public class BadSubscriptCaught {
 		// size of ArrayList 
         //int n = 8; 
 		int answer;
+		String ans= "y";
   
         //declaring ArrayList with initial size n 
         ArrayList<String> list = new ArrayList<String>(
@@ -23,18 +24,24 @@ public class BadSubscriptCaught {
 				
 		Scanner inputDevice= new Scanner(System.in);
 		
-		try
-		{
-		System.out.println("Hello, please type an integer:");
+		//while (ans=="y"){
 		
-		answer =inputDevice.nextInt();
-		
-		System.out.print(list.get(answer)+" "); 
-		}
-		catch (IndexOutOfBoundsException e)
-		{
-			System.out.println("Error: number should be less than 8.");
-		}
+			try
+			{
+			System.out.println("Hello, please type an integer:");
+			
+			answer =inputDevice.nextInt();
+			
+			System.out.print(list.get(answer)+" "); 
+			}
+			catch (IndexOutOfBoundsException e)
+			{
+				System.out.println("Error: number should be less than 8.");
+			}
+			// System.out.println("Try agagin?");
+			// ans=inputDevice.nextLine();
+			// inputDevice.nextLine();
+		//}
 	}
 	
 	
