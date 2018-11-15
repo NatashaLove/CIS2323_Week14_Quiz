@@ -24,7 +24,7 @@ public class BadSubscriptCaught {
 				
 		Scanner inputDevice= new Scanner(System.in);
 		
-		while (ans=="y"){
+		//while (ans=="y"){
 		
 			try
 			{
