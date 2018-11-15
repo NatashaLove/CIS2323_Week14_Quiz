@@ -24,7 +24,7 @@ public class BadSubscriptCaught {
 				
 		Scanner inputDevice= new Scanner(System.in);
 		
-		//while (ans=="y"){
+		while (ans=="y"){
 		
 			try
 			{
@@ -32,7 +32,7 @@ public class BadSubscriptCaught {
 			
 			answer =inputDevice.nextInt();
 			
-			System.out.print(list.get(answer)+" "); 
+			System.out.println(list.get(answer)+" "); 
 			}
 			catch (IndexOutOfBoundsException e)
 			{
@@ -41,7 +41,7 @@ public class BadSubscriptCaught {
 			// System.out.println("Try agagin?");
 			// ans=inputDevice.nextLine();
 			// inputDevice.nextLine();
-		//}
+		}
 	}
 	
 	
