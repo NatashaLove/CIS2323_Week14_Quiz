@@ -7,7 +7,7 @@ public class BadSubscriptCaught {
 		// size of ArrayList 
         //int n = 8; 
 		int answer;
-		String ans= "y";
+		char ans= 'y';
   
         //declaring ArrayList with initial size n 
         ArrayList<String> list = new ArrayList<String>(
@@ -26,7 +26,7 @@ public class BadSubscriptCaught {
 		
 		//While loop doesn't work with try-catch- ?
 		
-		//while (ans=="y"){
+		while (ans=='y'){
 		
 			try
 			{
@@ -42,13 +42,16 @@ public class BadSubscriptCaught {
 				System.out.println("Error: number should be less than 8.");
 			}
 			
-			// System.out.println("Try again?");
+			System.out.println("Try again?");
+			ans = inputDevice.next().charAt(0);
+			
+			// 
 			// ans=inputDevice.nextLine();
 			// inputDevice.nextLine();
 			// //inputDevice.nextLine();
-			// System.out.println("ans is equal to " + ans);
+			System.out.println("ans is equal to " + ans);
 			
-		//}
+		}
 	}
 	
 	
